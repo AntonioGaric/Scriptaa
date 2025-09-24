@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skripta - Antonio Garić</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f9; margin: 0; }
+    header { text-align: center; padding: 15px; background: #4f46e5; color: #fff; }
+    .lesson {
+      background: #fff; max-width: 800px; margin: 20px auto; padding: 20px;
+      border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .lesson h2 { margin: 0; background: #ec4899; color: #fff; padding: 10px; border-radius: 6px; }
+    pre {
+      background: #222; color: #eee; padding: 10px; border-radius: 6px;
+      overflow-x: auto;
+    }
+    .note { background: #fff3cd; padding: 8px; border-left: 4px solid #ffc107; margin: 10px 0; }
+    .tags { margin-top: 10px; }
+    .tags span {
+      background: #e5e7eb; border-radius: 6px;
+      padding: 5px 10px; margin-right: 5px; font-size: 12px;
+      display: inline-block;
+    }
+    footer { text-align: center; padding: 15px; color: #666; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1> Skripta - Antonio Garić</h1>
+</header>
+
+<div class="lesson">
+  <h2>Dodavanje CSS-a u HTML</h2>
+  <p><b>Što je CSS?</b><br>
+  CSS (Cascading Style Sheets) služi za oblikovanje HTML elemenata (boje, fontovi, raspored...)</p>
+
+  <p><b>Načini dodavanja:</b></p>
+  <ul>
+    <li>Inline – unutar taga pomoću <code>style</code></li>
+    <li>Internal – u <code>&lt;style&gt;</code> dijelu</li>
+    <li>External – u posebnoj .css datoteci</li>
+  </ul>
+
+  <pre><code>&lt;!-- Primjer External CSS --&gt;
+&lt;link rel="stylesheet" href="stil.css"&gt;</code></pre>
+
+  <div class="note">
+    Preporučuje se koristiti <b>external CSS</b> jer se isti stil može koristiti na više stranica.
+  </div>
+</div>
+
+<!-- NOVI DIO ISPOD -->
+<div class="lesson">
+  <h2>Ključni elementi koje smo učili</h2>
+  <ul>
+    <li><b>&lt;html&gt;</b> – glavni kontejner za sve HTML elemente</li>
+    <li><b>&lt;head&gt;</b> – sadrži meta informacije o stranici</li>
+    <li><b>&lt;body&gt;</b> – sadrži vidljivi sadržaj stranice</li>
+    <li><b>&lt;h1&gt; - &lt;h6&gt;</b> – naslovi različitih veličina</li>
+    <li><b>&lt;p&gt;</b> – paragrafi teksta</li>
+  </ul>
+
+  <div class="note">
+    <b>Važno:</b> HTML tagovi se uvijek zatvaraju! Svaki otvoreni tag mora imati svoj zatvoreni tag 
+    (osim self-closing tagova poput <code>&lt;br&gt;</code>, <code>&lt;img&gt;</code>).
+  </div>
+
+  <div class="tags">
+    <span>HTML</span>
+    <span>Struktura</span>
+    <span>Osnove</span>
+  </div>
+</div>
+
+<footer>
+  © 2025 Antonio Garić
+</footer>
+
+</body>
+</html>
